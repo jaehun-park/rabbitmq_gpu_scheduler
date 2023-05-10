@@ -1,0 +1,6 @@
+EXP_NAME: "resnet"
+WORKER: "Jaehun Park"
+
+BATCH_SIZE: 100
+ERROR: False
+MODEL_SAVE_PATH: /

@@ -1,0 +1,6 @@
+EXP_NAME: "swin_t"
+WORKER: "Jaehun Park"
+
+BATCH_SIZE: 100
+ERROR: False
+MODEL_SAVE_PATH: /

@@ -1,0 +1,6 @@
+EXP_NAME: "efficientnet"
+WORKER: "Jaehun Park"
+
+BATCH_SIZE: 100
+ERROR: True
+MODEL_SAVE_PATH: /
