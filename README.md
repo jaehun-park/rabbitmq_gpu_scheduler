@@ -13,13 +13,13 @@ The RabbitMQ GPU scheduler is a system that enables deep learning model experime
 <br>
 
 ## Getting Started : Broker Server
-### 1. install rabbitmq server
+#### 1. install RabbitMQ server
 ```
 apt-get update
 apt-get install rabbitmq-server
 ```
 
-### 2. Base Settings
+#### 2. Base Settings
 ```
 service rabbitmq-server start
 rabbitmq-plugins enable rabbitmq_management
@@ -34,17 +34,16 @@ Create an account to use for the broker connection and delete the default guest 
 <br>
 
 ## Getting Started : Producer Server
-### 1. clone this repository
-### 2. Installing Required Libraries
+#### 1. clone this repository
+#### 2. installing required libraries
 ``` bash
 pip install pika
 pip install python-dotenv
 ```
-### 3. In the .env file, enter the value of the variable (broker ip, port, etc)
-### 4. move to producer directory
-### 5. run producer.py
+#### 3. in the .env file, enter the value of the variable (broker ip, port, etc)
+#### 4. move to producer directory
+#### 5. run producer.py
 ``` bash
-# ./producer
 python -B producer.py -c config.yaml -p 1
 ```
 -c : files to send  
@@ -53,16 +52,16 @@ python -B producer.py -c config.yaml -p 1
 <br>
 
 ## Getting Started : Consumer Server
-### 1. clone this repository
-### 2. Installing Required Libraries
+#### 1. clone this repository
+#### 2. installing required libraries
 ``` bash
 pip install pika
 pip install python-dotenv
 # In addition, libraries required for worker or model train
 ```
-### 3. In the .env file, enter the value of the variable (broker ip, port, etc)
-### 4. run consumer (get Message and run model trainer)
+#### 3. in the .env file, enter the value of the variable (broker ip, port, etc)
+#### 4. move to consumer directory
+#### 5. run consumer.py (get message and run model trainer)
 ``` bash
-# ./consumer
 python -B consumer.py
 ```
